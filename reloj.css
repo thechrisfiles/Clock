@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #f4ff61, #ffb259, #fd619d, #c894d8, #a7e6fd, #8cffa5);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #080808;
+  border-radius: 5px;
+  padding: 60px 20px;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15),
+    0 15px 90px 30px rgba(0, 0, 0, 0.25);
+}
+
+.container #elem1 {
+  color: #fff;
+  font-family: "Abril Fatface", cursive;
+  font-size: 7em;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
