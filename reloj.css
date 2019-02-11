@@ -7,6 +7,7 @@ body {
   background-size: 400% 400%;
   animation: Gradient 10s ease infinite;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -37,4 +38,49 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+@media only screen and (max-width: 960px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 246px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #080808;
+    border-radius: 5px;
+    padding: 30px 10px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15),
+      0 15px 90px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .container #elem1 {
+    font-size: 3em;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 185px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background-color: #080808;
+    border-radius: 5px;
+    padding: 15px 5px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15),
+      0 15px 90px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .container #elem1 {
+    color: #fff;
+    font-family: "Abril Fatface", cursive;
+    font-size: 2em;
+  }
+  
 }
