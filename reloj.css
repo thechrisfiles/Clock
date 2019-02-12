@@ -28,6 +28,8 @@ body {
   font-size: 7em;
 }
 
+/* Animacion Background */
+
 @keyframes Gradient {
   0% {
     background-position: 0% 50%;
@@ -40,6 +42,7 @@ body {
   }
 }
 
+/* Responsive */
 
 @media only screen and (max-width: 960px) {
   .container {
